@@ -7,7 +7,7 @@ const app = Vue.createApp({
   },
   methods:{
     addGoal(){
-      this.goals.push(this.enteredGoal)
+      this.goals.push({id:Math.random()*4,content:this.enteredGoal})
       this.enteredGoal=""
     },
     removeGoal(index){
